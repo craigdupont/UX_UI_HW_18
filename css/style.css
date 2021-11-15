@@ -1,0 +1,171 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding:1%;
+}
+
+nav {
+    width:72%;
+    padding:1%;   
+}
+
+.topNav {
+    width: max-content;
+    margin-left: auto;
+    word-spacing: 30px;
+}
+
+/*makes the hero+header+footer black*/
+.blackBackground {
+    background-color: black;
+}
+
+
+.content {
+    vertical-align: top;
+    display: inline-flex;
+}
+
+/*makes the text on the header+hero image+footer white */
+.whiteText {
+    color: white;
+}
+
+.nameTitle {
+    width: fit-content;
+    margin: 10% 0px 0 25%;
+    font-size : 64px;
+}
+
+/*modifies the size of the text to picture ratio on the hero*/
+.heroSize {
+    width: 60%;
+}
+
+.heroText {
+    width: 50%;
+    margin: 6% 10% 10% 30%;
+    text-align: center;
+    font-size: 28px;
+}
+
+/*removes white border from edges so content goes the full page, not 99%*/
+body {
+    margin: 0%;
+}
+
+.heroImg {
+    height: 600;
+    padding: 25px;
+}
+
+h2 {
+text-align: center;
+font-size: 48px;
+padding: 1%;
+margin-top: 20px;
+
+}
+
+.skillsText {
+    width: 40%;
+    margin: 3% 5% 0px 15%;
+    height: fit-content;
+}
+
+.skillsTitle {
+    font-size: 32px;
+}
+
+.skillsBody {
+    font-size: 24px;
+}
+
+.toolsText {
+    font-size: 24px;
+    width: fit-content;
+    height: fit-content;
+    vertical-align: middle !important;
+}
+
+
+
+
+.carousel {
+  width:400px;
+  height:400px;
+}
+
+.workBox {
+    display: inline-block;
+    margin:30px;
+  }
+
+.imgOutline {
+    height:333px;
+    width: 363px;
+    border:2px solid black;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.boxInfo {
+    padding: 5px 15px 15px 15px;
+    text-align: center;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 333px;
+    height: 125;
+ }
+
+h3 {
+    margin: auto;
+    font-size: 32px;
+}
+
+.cSText {
+    margin: auto;
+}
+
+.centerBoxes {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+.footerText {
+    text-align: left;
+    width: 250px;
+    margin-left: 16px;
+}
+
+footer {
+    vertical-align: top;
+    width: 100%;
+}
+
+.navFooter {
+    margin: 16px 16px 0px 20px;
+    word-spacing: 30px;
+    display: inline-block;
+    padding: 0%;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0px;
+}
+

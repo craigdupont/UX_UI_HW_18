@@ -37,7 +37,7 @@ nav {
 
 .nameTitle {
     width: fit-content;
-    margin: 10% 0px 0 25%;
+    margin: 5% 0px 0 25%;
     font-size : 64px;
 }
 
@@ -72,8 +72,8 @@ margin-top: 20px;
 }
 
 .skillsText {
-    width: 40%;
-    margin: 3% 5% 0px 15%;
+    width: 30%;
+    margin-top: 3%;
     height: fit-content;
 }
 
@@ -85,6 +85,17 @@ margin-top: 20px;
     font-size: 24px;
 }
 
+.skillPic {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.skillBox {
+    padding: 16px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .toolsText {
     font-size: 24px;
     width: fit-content;
@@ -92,9 +103,7 @@ margin-top: 20px;
     vertical-align: middle !important;
 }
 
-
-
-
+/*sets carousel image size*/
 .carousel {
   width:400px;
   height:400px;
@@ -120,8 +129,8 @@ margin-top: 20px;
     border-top: none;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-    width: 333px;
-    height: 125;
+    width: 363px;
+    height: 225;
  }
 
 h3 {
@@ -139,19 +148,10 @@ h3 {
     padding: 1%;
 }
 
-
-
-
-
-
-
-
-
-
 .footerText {
     text-align: left;
     width: 250px;
-    margin-left: 16px;
+    margin: 16px 0px 16px 16px;
 }
 
 footer {

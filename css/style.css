@@ -9,7 +9,7 @@
 }
 
 nav {
-    width:72%;
+    width:76%;
     padding:1%;   
 }
 
@@ -96,17 +96,20 @@ margin-top: 20px;
     justify-content: space-evenly;
 }
 
+/*text for Tools section */
 .toolsText {
     font-size: 24px;
     width: fit-content;
     height: fit-content;
-    vertical-align: middle !important;
 }
 
 /*sets carousel image size*/
 .carousel {
-  width:400px;
-  height:400px;
+  width:500px;
+  height:500px;
+  border: 1px solid #979797;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .workBox {
@@ -169,3 +172,13 @@ footer {
     right: 0px;
 }
 
+/*fonts*/
+.fontL {
+    font-family: 'Lato', sans-serif;
+}
+.fontP {
+    font-family: 'Philosopher', sans-serif;
+}
+.fontG {
+    font-family: 'Gudea', sans-serif;
+}

@@ -2,21 +2,30 @@
     display: inline-block;
     vertical-align: top;
 }
-
+/*logo section*/
 .logo {
     width: 23%;
     padding:1%;
 }
-
+/*navigation bar section*/
 nav {
     width:76%;
     padding:1%;   
 }
-
+/*sets the navigation bar and spaces the text*/
 .topNav {
     width: max-content;
     margin-left: auto;
     word-spacing: 30px;
+}
+/*creates a sandwich for when on mobile*/
+.sandwich {
+    position: absolute;
+    top: 1%;
+    right: 4%;
+    height: 40px;
+    width: 40px;
+    visibility: hidden;
 }
 
 /*makes the hero+header+footer black*/
@@ -24,7 +33,7 @@ nav {
     background-color: black;
 }
 
-
+/*aligns hero image items*/
 .content {
     vertical-align: top;
     display: inline-flex;
@@ -34,7 +43,7 @@ nav {
 .whiteText {
     color: white;
 }
-
+/*hero image text*/
 .nameTitle {
     width: fit-content;
     margin: 5% 0px 0 25%;
@@ -45,7 +54,7 @@ nav {
 .heroSize {
     width: 60%;
 }
-
+/*hero image body text*/
 .heroText {
     width: 50%;
     margin: 6% 10% 10% 30%;
@@ -57,12 +66,12 @@ nav {
 body {
     margin: 0%;
 }
-
+/*space for entire hero image, text and picure*/
 .heroImg {
-    height: 600;
+    height: 600px;
     padding: 25px;
 }
-
+/*makes the skills section into a grid*/
 .gridLayout {
     display: grid;
     grid-template-columns: 400px 400px;
@@ -70,37 +79,36 @@ body {
     grid-column-gap: 20px;
     justify-content: space-evenly;
 }
-
+/*lets the skill and tools titles take up the whole space*/
 .fullLength {
     grid-column: 1 / span 2;
 }
 
-
+/*font and placement for skills and tools*/
 h2 {
 text-align: center;
 font-size: 48px;
 padding: 1%;
 margin-top: 20px;
 }
-
+/*aligns the title and body under skills*/
 .skillsText {
     margin-top: 3%;
     height: fit-content;
 }
-
-.skillsTitle {
+/*font size for skills subsection titles*/
+h4 {
     font-size: 32px;
 }
-
+/*text size for skills body*/
 .skillsBody {
     font-size: 24px;
 }
-
+/*bordering for skill pictures*/
 .skillPic {
     border: 1px solid black;
     border-radius: 5px;
 }
- /*----------------------------------------------------------------------------------*/
 
 
 /*text for Tools section */
@@ -118,12 +126,12 @@ margin-top: 20px;
   border-radius: 10px;
   overflow: hidden;
 }
-
+/*box for individual experience selections*/
 .workBox {
     display: inline-block;
     margin:30px;
   }
-
+/*settings for images in experience section*/
 .imgOutline {
     height:333px;
     width: 363px;
@@ -131,7 +139,7 @@ margin-top: 20px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
-
+/*size and shape of box for text in experience section*/
 .boxInfo {
     padding: 5px 15px 15px 15px;
     text-align: center;
@@ -143,24 +151,22 @@ margin-top: 20px;
     height: 225;
     display: flex;
     flex-direction: column;
- }
-
+}
+/*titles for experience boxes*/
 h3 {
     margin: auto;
     font-size: 32px;
 }
-
+/*text for experience boxes*/
 .cSText {
     margin: auto;
 }
-
 /*aligns experience boxes*/
 .centerBoxes {
     display: flex;
     justify-content: space-evenly;
     padding: 1% 1% 0% 1%;
 }
-/*---------------------------------------------------------------------------------*/
 
 /*button inside experience boxes*/
 .ebutton {
@@ -171,7 +177,6 @@ h3 {
     margin-top: 10px;
     height: 40px;
 }
-
 /*See more work button*/
 .sbutton {
     color: white;
@@ -183,25 +188,22 @@ h3 {
     margin-bottom: 20px;
     text-align: center;
 }
-
-
 /*aligns "See more Work button at the bottom of page*/
 .alignThis {
 text-align: center;
 }
-
-
+/*text in the footer*/
 .footerText {
     text-align: left;
     width: 250px;
     margin: 16px 0px 16px 16px;
 }
-
+/*footer itself*/
 footer {
     vertical-align: top;
     width: 100%;
 }
-
+/*social media for footer*/
 .navFooter {
     margin: 16px 16px 0px 20px;
     word-spacing: 30px;
@@ -211,7 +213,6 @@ footer {
     position: absolute;
     right: 0px;
 }
-
 /*fonts*/
 .fontL {
     font-family: 'Lato', sans-serif;
@@ -228,7 +229,11 @@ footer {
 @media only screen and (max-width: 600px) {
     /*removes nav bar*/
     nav ul{
-        visibility: hidden;
+        display: none;
+    }
+    /*makes the sandwich menu visible*/
+    .sandwich {
+        visibility: visible;
     }
     /*hero image space modifier*/
     .heroImg {
@@ -255,18 +260,96 @@ footer {
     /*modifies text and hero space to make picture go beneath text*/
     .content {
         flex-direction: column;
+        align-items: center;
     }
+    /*Sets size for section titles*/
+    .fullLength {
+        font-size: 32px;
+        grid-column: 1 / span 3;
+    }
+    /*adjusts titles under skills section*/
+    h4 {
+        font-size: 28px;
+        height: 50px;
+    }
+    /*adjusts body under skills section*/
+    .skillsBody {
+        font-size: 16px;
+    }
+    /*adjusts gridlayout for skills and tools sections*/
+    .gridLayout {
+        width: 100%;
+        grid-template-columns: 0px 400px;
 
-
-
-
-
-
-
-
-
+    }
+    /*all items are the individual sections under skills and tools to make them centered vertically, also makes the images responsive*/
+    .item1 {
+        grid-column: 2 / span 2;
+        width: 70%;
+        margin: auto;
+    }
+    .item2 {
+        grid-column: 2 / span 2;
+        margin: auto;
+        width: 90%;
+        height: auto;
+    }
+    .item3 {
+        grid-column: 2 / span 2;
+        width: 70%;
+        margin: auto;
+    }
+    .item4 {
+        grid-row: 5;
+        grid-column: 2 / span 2;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .item5 {
+        grid-column: 2 / span 2;
+        width: 70%;
+        margin: auto;
+    }
+    .item6 {
+        grid-column: 2 / span 2;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .item7 {
+        grid-column: 2 / span 2;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .item8 {
+        grid-column: 2 / span 2;
+        width: 70%;
+        margin: auto;
+    }
+    /*adjusts font size for experience box titles*/
+    h3 {
+        font-size: 28px;
+    }
+    /*adjusts width for see more work button*/
+    .sbutton {
+        width: 40%;
+    }
     /*moves the experience boxes into a column*/
     .centerBoxes {
         flex-direction: column;
+    }
+    /*aligns the experience boxes to the center*/
+    .workBox {
+        text-align: center;
+    }
+    /*aligns the lower half of the experience boxes to the center*/
+    .boxInfo {
+        margin: auto;
+    }
+    /*adjusts font text for mobile*/
+    .footerText {
+        font-size: 14px;
     }
 }
